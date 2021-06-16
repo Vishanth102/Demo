@@ -25,7 +25,6 @@ public class KafkaController {
 	public String produce(@RequestParam String message) {
 		template.send("Par-Academika-Price_Availability-DEV", message);
 		System.out.println("Message is sent");
-		System.out.println("Message is sent");
 		return "message sent to the topic";
 	}
 
